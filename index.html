@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="pokedex.css">
+   
+</head>
+<body>
+  <button onclick="reproducir()" class="boton-reproducir"></button>
+  <audio loop src="Pokémon - ¡Atrápalos Ya! (Latino) Oscar Roa [Full].mp3"  class="audio" ></audio>
+    <section class="cara">
+      <div class="container-luces">
+        <div class="esfera-grande">
+          <img src="imagenes/esferas/lente.png" alt="lente-grande">
+        </div>
+
+        <div class="esferas-pequeñas">
+           <img src="imagenes/esferas/lente(1).png" alt="lente-rojo">
+           <img src="imagenes/esferas/lente(3).png" alt="lente-amarillo">
+           <img src="imagenes/esferas/lente(2).png" alt="lente-verde">
+        </div>
+      </div>
+
+      <div class="botones">
+         <div class="carta-pokemon">
+           <div>
+            <img src="https://33.media.tumblr.com/e5dd18464487c3fead9a143f3c4920a2/tumblr_mqxeae5svG1qhz1nio1_500.gif" alt="Pokemon" id="pokeImg" width="150px">
+            <div class="nombres">
+              <p>#<span class="identificador">025</span></p><p>-<span class="identificador2">Pikachu</span></p>
+            </div>
+            
+           </div>
+         </div>
+         <div class="controles">
+            <div class="botones-control">
+              <img src="imagenes/botones/signo-de-mas.png" alt="boton-mas" class="mas">
+              <img src="imagenes/botones/minimizar-signo.png" alt="boton-menos" class="menos" >
+              <img src="imagenes/botones/minimizar-signo(1).png" alt="boton-menos" class="menos">
+              <button onclick="fetchPokemon()" > 
+                <img src="imagenes/botones/rec.png" alt="boton-grande" class="boton-ok">
+               </button>
+            </div>
+            <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+         </div>
+      </div>
+      <div>
+
+      </div>
+    </section>
+
+    <section  class="tapa">
+      <div class="espalda">
+        <div class="estadistica">
+          <p>Tipo:<span class="type">Trueno</span></p>
+          <p>Fraqueza:<span class="ability">static</span> <span class="ability">lightning-rod</span></p>
+          <div class="estadistica-fuerza">
+            <div class="container-">
+              <div class="container-linea">
+                <div >
+                  <div class="linea number1"></div>
+                  <span>PS</span>
+                </div>
+                <div>
+                  <div class="linea number2"></div>
+                  <span>ATK</span>
+                </div>
+                <div>
+                  <div class="linea number3"></div>
+                  <span>DEF</span>
+                </div>
+                <div>
+                  <div class="linea number4"></div>
+                  <span>SP.ATK</span>
+                </div>
+                <div>
+                  <div class="linea number5"></div>
+                  <span>SP.DEF</span>
+                </div>
+                <div>
+                  <div class="linea number6"></div>
+                  <span>SPEED</span>
+                </div>
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="celdas-espalda">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          
+        </div>
+  
+        <div class="boton-menos">
+          <img src="imagenes/botones/minimizar-signo(1).png" alt="boton-menos">
+          <img src="imagenes/botones/minimizar-signo(1).png" alt="boton-menos">
+        </div>
+  
+        <div class="container-led">
+          <div class="celda">
+              <div></div>
+              <div></div>
+          </div>
+          <div class="led">
+            <img src="imagenes/esferas/lente-de-la-camara.png" alt="luz-amarilla">
+          </div>
+        </div>
+  
+        <div class="peso-altura">
+          <div>
+             <p>Peso:<span class="peso">0Kg</span></p> 
+          </div>
+  
+          <div>
+            <p>Altura:<span class="altura">0m</span></p>
+          </div>
+  
+        </div>
+        
+      </div>
+    </section>
+    
+   
+    
+</body>
+<footer>
+    <script src="pokedex.js"></script>
+    
+
+</footer>
+</html>
