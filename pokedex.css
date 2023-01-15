@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+span {
+  text-transform: capitalize;
+}
+.boton-reproducir {
+  width: 50px;
+  height: 50px;
+  background-image: url("imagenes/botones/círculo-96.png");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 23px;
+  border: none;
+  margin: 10px;
+}
+.boton-reproducir:hover {
+  cursor: pointer;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("imagenes/wp3961359.webp");
+  background-position: center center;
+  background-size: cover;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.cara {
+  width: 406px;
+}
+.cara .container-luces {
+  height: 100px;
+  background-color: rgb(88, 8, 8);
+  display: flex;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+  box-shadow: inset -6px 0px 5px 0px #ffffffcb;
+}
+.esfera-grande {
+  height: 80px;
+  width: 80px;
+  margin: 10px 0 0 30px;
+}
+.esferas-pequeñas {
+  display: flex;
+  width: 100px;
+  height: 26px;
+  padding: 10px;
+}
+.esferas-pequeñas img {
+  margin: 1px 5px 1px 5px;
+}
+.botones {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 6, 6);
+  border-radius: 0px 0px 17px 38px;
+  border-left: 4px solid;
+  border-right-style: groove;
+}
+.botones .carta-pokemon {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 21px 21px 35px 21px;
+  border: 1px solid;
+  border-bottom-left-radius: 133px;
+
+  background: linear-gradient(
+    49deg,
+    #0fc7e7,
+    rgb(145 210 235 / 88%) 27%,
+    rgb(255 255 255),
+    #048489 108%
+  );
+  box-shadow: -4px 4px 3px 4px black;
+}
+.carta-pokemon .nombres {
+  display: flex;
+  justify-content: center;
+}
+.botones .carta-pokemon > div {
+  width: 250px;
+  height: auto;
+  padding: 12px;
+  border: solid 1px;
+  border-radius: 125px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 0px 4px #857777;
+}
+
+.botones .carta-pokemon div p {
+  text-align: center;
+}
+
+.controles {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controles .botones-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones-control button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.controles .botones-control .mas {
+  width: 121px;
+  margin: 10px;
+}
+.controles .botones-control .menos {
+  width: 60px;
+  margin: 10px;
+}
+.controles .botones-control .boton-ok {
+  width: 76px;
+}
+
+.controles input {
+  width: 150px;
+  height: 40px;
+  background-color: rgb(3, 14, 34);
+  border-radius: 3px;
+  font-size: 21px;
+  text-align: center;
+  color: azure;
+}
+
+/*espaldaa*/
+
+.tapa {
+  padding-top: 100px;
+}
+.espalda {
+  background-color: red;
+  width: 406px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  border-radius: 0px 23px 23px 0px;
+}
+
+.estadistica-fuerza {
+  margin-top: 4px;
+}
+.espalda .estadistica {
+  display: flex;
+  justify-content: center;
+
+  padding: 12px;
+  height: 150px;
+  background-color: rgb(0 4 42);
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.estadistica p {
+  color: rgb(252, 203, 113);
+  margin: 7px 0;
+}
+
+.estadistica p span {
+  background-color: rgb(13, 200, 224);
+  color: azure;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.container-linea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.container-linea div {
+  text-align: center;
+}
+.container-linea > div {
+  background-color: rgb(78, 52, 42);
+  margin: 0 5px;
+  display: flex;
+  height: 80px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.linea {
+  height: 68px;
+  width: 40px;
+  background-color: red;
+}
+.container-linea span {
+  background-color: azure;
+  color: black;
+  font-size: 10px;
+}
+
+.boton-menos {
+  display: flex;
+}
+.boton-menos img {
+  margin: 0 7px;
+}
+
+.celdas-espalda {
+  width: 379px;
+  height: 145px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #0fc7e7;
+  border-radius: 10px;
+  border: solid;
+  margin-top: 20px;
+}
+
+.celdas-espalda div {
+  border: 1px solid black;
+}
+.container-led {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.container-led .led {
+  width: 40px;
+}
+.container-led .celda {
+  width: 100px;
+  height: 50px;
+  background-color: #857777;
+  border: solid;
+  border-radius: 10px;
+  display: grid;
+  justify-content: space-around;
+}
+.container-led .celda div {
+  border: solid;
+}
+
+.peso-altura {
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.peso-altura div {
+  background-color: rgb(41, 18, 18);
+  padding: 10px;
+  border-radius: 5px;
+}
+.peso-altura div p {
+  color: yellow;
+}
+
+@media (max-width:913px) {
+    
+    .boton-reproducir{
+        position:absolute;
+    }
+
+    body {
+        flex-direction: column;
+        height: auto;
+        background-image: none;
+         background-color: #cc5577;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23cb5475' x='10' width='11' height='11'/%3E%3Crect fill='%23cb5473' y='10' width='11' height='11'/%3E%3Crect fill='%23ca5372' x='20' width='11' height='11'/%3E%3Crect fill='%23c95270' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23c9526e' y='20' width='11' height='11'/%3E%3Crect fill='%23c8516c' x='30' width='11' height='11'/%3E%3Crect fill='%23c7506b' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23c75069' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23c64f67' y='30' width='11' height='11'/%3E%3Crect fill='%23c54e65' x='40' width='11' height='11'/%3E%3Crect fill='%23c44e64' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23c34d62' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23c34d60' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23c24c5f' y='40' width='11' height='11'/%3E%3Crect fill='%23c14b5d' x='50' width='11' height='11'/%3E%3Crect fill='%23c04b5b' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23bf4a5a' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23be4a58' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23bd4956' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23bc4955' y='50' width='11' height='11'/%3E%3Crect fill='%23bc4853' x='60' width='11' height='11'/%3E%3Crect fill='%23bb4851' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23ba4750' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23b9474e' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23b8474c' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23b7464b' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23b64649' x='70' width='11' height='11'/%3E%3Crect fill='%23b54547' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23b44546' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23b34544' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23b24443' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23b14441' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23af433f' x='80' width='11' height='11'/%3E%3Crect fill='%23ae433e' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23ad433c' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23ac423b' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23ab4239' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23aa4237' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23a94136' x='90' width='11' height='11'/%3E%3Crect fill='%23a84134' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23a64133' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23a54131' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23a44030' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23a3402e' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23a2402d' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23a1402b' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%239f3f2a' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%239e3f28' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%239d3f27' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%239c3f25' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%239a3f23' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23993e22' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23983e20' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23973e1f' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23953e1d' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23943e1c' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23933d1a' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23913d19' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23903D17' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .tapa {
+        padding-top: 0;
+        border-bottom: 81px solid #000033;
+      }
+      .espalda {
+        border-radius: 33px 40px 0px 0px;
+        box-shadow: 2px -4px black;
+        margin-bottom: 0;
+      }
+}
+
+@media (max-width: 414px) {
+  body{
+    background: #0d3d3f;
+  }
+
+  .botones{
+    border: 0;
+    border-radius: 0;
+  }
+  .cara, .controles{
+    width: auto;
+  }
+  .cara .container-luces {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+ 
+  .celdas-espalda{
+    width: 346px;
+  }
+  .controles .botones-control .mas{
+    width: 107px;
+  }
+  .peso-altura{
+    justify-content: center;
+  }
+  .peso-altura div {
+  margin: 0 6px; 
+  }
+}
